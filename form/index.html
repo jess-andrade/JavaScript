@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form </title>
+    <link rel="stylesheet" href=".\assets\css\style.css"
+</head>
+<body>
+    
+    <section class="container">
+        <center><h1>Registration Form</h1></center><br>
+        
+        <ul>
+            <li>no field can be empty</li>
+            <li>the username can only contain letters or numbers</li>
+            <li>the username must be between 3 and 12 characters</li>
+            <li>password must be between 6 and 12 characters</li>
+        </ul>     <br>
+        
+        <form action="/" method="POST" class="form">
+            <label>Name</label>
+            <input type="text" class="name ok">
+
+            <label>Last name</label>
+            <input type="text" class="lastname ok">
+            
+            <label>CPF</label>
+            <input type="text" class="cpf ok">
+
+            <label>Username</label>
+            <input type="text" class="user ok">
+
+            <label>Password</label>
+            <input type="password" class="password ok">
+            
+            <label>Confirm password</label>
+            <input type="password" class="confirm-password ok">
+
+            <button type ="submit">Send</button>
+        </form>
+    </section>
+
+    <script src = ".\assets\js\ValidateCPF.js"></script>
+    <script src = ".\assets\js\main.js"></script>
+</body>
+</html>

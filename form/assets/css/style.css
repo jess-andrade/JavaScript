@@ -1,0 +1,93 @@
+:root{
+    --primary-color: rgb(23, 22, 22); 
+    --primary-color-darker: rgb(179, 32, 86); 
+}
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 28px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background: white ;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(39, 38, 38);
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form label{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family:monospace;
+}
+
+form input{
+    font-size: 14px;
+    height: 30px;
+    padding: 0 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+form input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+form button{
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+    font-family: monospace;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+
+form button:hover{
+    background: var(--primary-color-darker);
+}
+
+form button:active{
+    background: rgb(79, 166, 216);
+}
+
+.alert{
+    border-color: var(--primary-color-darker);
+    border-style: dotted;
+    border-width: 1mm;
+    max-width: 600px;
+    height: 40px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.error-text{
+    font-size: 10px;
+    color: red;
+}
